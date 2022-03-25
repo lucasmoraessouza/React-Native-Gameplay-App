@@ -8,8 +8,8 @@ import {
   Rajdhani_700Bold,
 } from "@expo-google-fonts/rajdhani";
 
-import { SignIn } from "./src/screens/SignIn";
 import { Background } from "./src/components/Background";
+import { Routes } from "./src/routes";
 export default function App() {
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
@@ -23,13 +23,13 @@ export default function App() {
   }
 
   return (
-    <Background>
+    <>
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
-      <SignIn />
-    </Background>
+      <Routes />
+    </>
   );
 }
